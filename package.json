@@ -1,19 +1,16 @@
 {
-  "name": "mysam",
-  "description": "An open \"intelligent\" assistant for the browser and NodeJS that can listen to you and learn.",
+  "name": "mysam-core",
+  "description": "MySam core classification and tagging engine for NodeJS and the browser",
   "version": "0.2.0-pre.3",
   "homepage": "https://mysamai.com",
   "main": "lib/",
   "keywords": [
     "mysam"
   ],
-  "bin": {
-    "mysam": "./bin/mysam"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mysamai/mysam.git"
+    "url": "git://github.com/mysamai/mysam-core.git"
   },
   "author": {
     "name": "David Luecke",
@@ -22,7 +19,7 @@
   },
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/mysamai/mysam/issues"
+    "url": "https://github.com/mysamai/mysam-core/issues"
   },
   "engines": {
     "node": ">= 8.0.0"
