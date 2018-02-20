@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.3.0](https://github.com/mysamai/mysam-core/tree/v0.3.0) (2018-02-20)
+[Full Changelog](https://github.com/mysamai/mysam-core/compare/v0.2.0...v0.3.0)
+
+**Merged pull requests:**
+
+- Add browser build back [\#2](https://github.com/mysamai/mysam-core/pull/2) ([daffl](https://github.com/daffl))
+
 ## [v0.2.0](https://github.com/mysamai/mysam-core/tree/v0.2.0) (2018-02-17)
 **Merged pull requests:**
 
