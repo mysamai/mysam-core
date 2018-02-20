@@ -7545,7 +7545,7 @@ module.exports = '3.1.3';
 
 
 var md5 = __webpack_require__(69);
-var debug = __webpack_require__(3)('mysam-server/hooks/md5-id');
+var debug = __webpack_require__(3)('mysam-core/hooks/md5-id');
 
 module.exports = function md5Id() {
   var field = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '_id';
@@ -23346,7 +23346,7 @@ module.exports = baseIsSet;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var debug = __webpack_require__(3)('mysam-server/services/tokenize');
+var debug = __webpack_require__(3)('mysam-core/services/tokenize');
 
 var extract = __webpack_require__(51);
 
@@ -26875,7 +26875,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var BrainJSClassifier = __webpack_require__(265);
 var maxBy = __webpack_require__(90);
 var debounce = __webpack_require__(321);
-var debug = __webpack_require__(3)('mysam-server:classifier-service');
+var debug = __webpack_require__(3)('mysam-core:classifier-service');
 
 // We want to classify every word
 BrainJSClassifier.disableStopWords();
@@ -37419,7 +37419,7 @@ module.exports = toNumber;
 "use strict";
 
 
-var debug = __webpack_require__(3)('mysam-server/hooks/lowercase');
+var debug = __webpack_require__(3)('mysam-core/hooks/lowercase');
 
 module.exports = function lowerCase() {
   for (var _len = arguments.length, fields = Array(_len), _key = 0; _key < _len; _key++) {
@@ -37457,7 +37457,7 @@ module.exports = function lowerCase() {
 "use strict";
 
 
-var debug = __webpack_require__(3)('mysam-server/hooks/extract-action');
+var debug = __webpack_require__(3)('mysam-core/hooks/extract-action');
 
 var _require = __webpack_require__(51),
     extractor = _require.extractor;
@@ -37493,7 +37493,7 @@ module.exports = function extractAction() {
 "use strict";
 
 
-var debug = __webpack_require__(3)('mysam-server/hooks/add-tokenization');
+var debug = __webpack_require__(3)('mysam-core/hooks/add-tokenization');
 
 module.exports = function addTokenization() {
   return function (hook) {
@@ -37543,7 +37543,7 @@ module.exports = function () {
 
 
 var md5 = __webpack_require__(69);
-var debug = __webpack_require__(3)('mysam-server/hooks/add-classification');
+var debug = __webpack_require__(3)('mysam-core/hooks/add-classification');
 
 var _require = __webpack_require__(51),
     extractor = _require.extractor;
