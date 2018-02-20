@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.3.1](https://github.com/mysamai/mysam-core/tree/v0.3.1) (2018-02-20)
+[Full Changelog](https://github.com/mysamai/mysam-core/compare/v0.3.0...v0.3.1)
+
 ## [v0.3.0](https://github.com/mysamai/mysam-core/tree/v0.3.0) (2018-02-20)
 [Full Changelog](https://github.com/mysamai/mysam-core/compare/v0.2.0...v0.3.0)
 
