@@ -1,7 +1,7 @@
 {
   "name": "mysam-core",
   "description": "MySam core classification and tagging engine for NodeJS and the browser",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "homepage": "https://mysamai.com",
   "main": "lib/",
   "keywords": [
