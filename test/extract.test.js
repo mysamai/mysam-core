@@ -4,7 +4,7 @@ const stem = require('../lib/extract/utils');
 const Extractor = require('../lib/extract/extractor');
 const { tokenize } = stem;
 
-describe('mysam-extract', () => {
+describe('classification and extraction', () => {
   it('exports high level functionality', function () {
     const e = extract.extractor('what\'s the weather in vancouver')
       .tag({ location: [5, 5] });

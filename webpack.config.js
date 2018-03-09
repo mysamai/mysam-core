@@ -8,9 +8,10 @@ const commons = {
   context: path.join(__dirname, 'lib'),
   entry: './index.js',
   output: {
+    globalObject: 'this',
     library: [ 'mysam', 'core' ],
     libraryTarget: 'umd',
-    filename: path.join('dist', 'mysam-core.js')
+    filename: 'mysam-core.js'
   },
   module: {
     rules: [{
@@ -28,6 +29,7 @@ const commons = {
 };
 
 const dev = {
+  mode: 'development',
   devtool: 'source-map',
   devServer: {
     port: 3030,
@@ -37,9 +39,9 @@ const dev = {
 };
 
 const production = {
-  devtool: 'cheap-module-source-map',
+  mode: 'production',
   output: {
-    filename: path.join('dist', 'mysam-core.min.js')
+    filename: 'mysam-core.min.js'
   },
   plugins: [
     new UglifyJSPlugin({
