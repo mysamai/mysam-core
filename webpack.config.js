@@ -7,6 +7,7 @@ const env = process.env.NODE_ENV || 'development';
 const commons = {
   context: path.join(__dirname, 'lib'),
   entry: './index.js',
+  globalObject: 'this',
   output: {
     library: [ 'mysam', 'core' ],
     libraryTarget: 'umd',
