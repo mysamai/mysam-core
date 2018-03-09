@@ -34,6 +34,7 @@
     "lint": "semistandard --fix",
     "mocha": "mocha --opts mocha.opts",
     "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
+    "ci": "npm run build && npm run coverage",
     "test": "npm run coverage",
     "clean": "shx rm -rf dist/ && shx mkdir -p dist",
     "add-dist": "npm run build && git add dist/ --force && git commit -am \"Updating dist\"",
