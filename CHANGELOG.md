@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.3.2](https://github.com/mysamai/mysam-core/tree/v0.3.2) (2018-03-09)
+[Full Changelog](https://github.com/mysamai/mysam-core/compare/v0.3.1...v0.3.2)
+
+**Merged pull requests:**
+
+- Update webpack to the latest version 🚀 [\#3](https://github.com/mysamai/mysam-core/pull/3) ([greenkeeper[bot]](https://github.com/apps/greenkeeper))
+
 ## [v0.3.1](https://github.com/mysamai/mysam-core/tree/v0.3.1) (2018-02-20)
 [Full Changelog](https://github.com/mysamai/mysam-core/compare/v0.3.0...v0.3.1)
 
