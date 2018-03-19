@@ -20,7 +20,7 @@ describe('trainings service', () => {
     });
   });
 
-  it.skip('training with existing action will link it even if text is different', function () {
+  it('training with existing action will link it even if text is different', function () {
     const action = {
       type: 'something',
       text: 'hi there',
@@ -40,6 +40,20 @@ describe('trainings service', () => {
           assert.equal(training.action._id, createdAction._id)
         );
       });
+  });
+
+  it('allows to train and extract with `null` tags', function () {
+    return this.app.service('trainings').create({
+      text: 'how is the weather',
+      action: {
+        type: 'weather',
+        tags: {
+          location: null
+        }
+      }
+    }).then(training => {
+      assert.deepEqual(training.classification.extracted, {});
+    });
   });
 
   it('adds a classification to a new training', function () {
