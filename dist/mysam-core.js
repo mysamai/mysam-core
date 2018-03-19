@@ -39045,6 +39045,10 @@ var maxBy = __webpack_require__(/*! lodash/maxBy */ "../node_modules/lodash/maxB
 var stem = __webpack_require__(/*! ./utils */ "./extract/utils.js");
 var tokenize = stem.tokenize;
 
+var validateTag = function validateTag(tag) {
+  return Array.isArray(tag.bounds) && tag.bounds.length === 2;
+};
+
 var Extractor = function () {
   function Extractor(baseline) {
     var tags = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
@@ -39052,14 +39056,18 @@ var Extractor = function () {
     _classCallCheck(this, Extractor);
 
     this.baseline = stem(baseline);
-    this.tags = tags;
+    this.tags = tags.filter(validateTag);
   }
 
   Extractor.prototype.tag = function tag(tags) {
     var _this = this;
 
     each(tags, function (bounds, label) {
-      return _this.tags.push({ label: label, bounds: bounds });
+      var tag = { label: label, bounds: bounds };
+
+      if (validateTag(tag)) {
+        _this.tags.push(tag);
+      }
     });
 
     // Make sure that tags are ordered by their beginning location
@@ -39123,7 +39131,7 @@ var Extractor = function () {
     var result = {};
 
     tags.forEach(function (tag) {
-      return result[tag.label] = tag.bounds;
+      result[tag.label] = tag.bounds;
     });
 
     return result;
