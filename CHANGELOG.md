@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.3.3](https://github.com/mysamai/mysam-core/tree/v0.3.3) (2018-03-19)
+[Full Changelog](https://github.com/mysamai/mysam-core/compare/v0.3.2...v0.3.3)
+
+**Merged pull requests:**
+
+- Allow to train and extract with null tags [\#4](https://github.com/mysamai/mysam-core/pull/4) ([daffl](https://github.com/daffl))
+
 ## [v0.3.2](https://github.com/mysamai/mysam-core/tree/v0.3.2) (2018-03-09)
 [Full Changelog](https://github.com/mysamai/mysam-core/compare/v0.3.1...v0.3.2)
 
