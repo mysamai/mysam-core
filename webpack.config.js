@@ -6,7 +6,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const env = process.env.NODE_ENV || 'development';
 const commons = {
   context: path.join(__dirname, 'lib'),
-  entry: './index.js',
+  entry: [ 'babel-polyfill', './index.js' ],
   output: {
     globalObject: 'this',
     library: [ 'mysam', 'core' ],
@@ -16,8 +16,10 @@ const commons = {
   module: {
     rules: [{
       test: /\.jsx?$/,
-      exclude: /node_modules\/(?!(@feathersjs|mysam|feathers))/,
-      loader: 'babel-loader'
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env']
+      }
     }, {
       test: path.resolve(__dirname, 'node_modules/webworker-threads/index.js'),
       use: 'null-loader'
