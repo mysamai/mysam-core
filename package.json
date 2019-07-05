@@ -60,7 +60,7 @@
     "commander": "^2.19.0",
     "express": "^4.16.4",
     "feathers-localstorage": "^4.0.0",
-    "feathers-memory": "^3.0.1",
+    "feathers-memory": "^4.0.0",
     "lodash": "^4.17.11",
     "natural": "^0.6.3",
     "natural-brain": "^0.3.2"
