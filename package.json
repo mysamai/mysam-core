@@ -55,7 +55,7 @@
     "lib": "lib"
   },
   "dependencies": {
-    "@feathersjs/feathers": "^3.3.1",
+    "@feathersjs/feathers": "^4.3.4",
     "blueimp-md5": "^2.10.0",
     "commander": "^2.19.0",
     "express": "^4.16.4",
