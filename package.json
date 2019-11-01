@@ -57,7 +57,7 @@
   "dependencies": {
     "@feathersjs/feathers": "^3.3.1",
     "blueimp-md5": "^2.10.0",
-    "commander": "^2.19.0",
+    "commander": "^4.0.0",
     "express": "^4.16.4",
     "feathers-localstorage": "^4.0.0",
     "feathers-memory": "^4.0.0",
